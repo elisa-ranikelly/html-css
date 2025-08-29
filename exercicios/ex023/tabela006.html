@@ -25,17 +25,24 @@
         th, td{
             border: 1px solid black;
             padding: 10px;
+            text-align: center;
+        }
+        #media1, #media2{
+            text-align: left;
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>
+            Boletinho Escolar
+        </caption>
         <thead>
             <tr class="c1">
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
             </tr>
             <tr class="c1">
                 <th>Nota 1</th>
@@ -44,7 +51,7 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -70,7 +77,7 @@
             </tr>
         
         <tr class="c1">
-            <th colspan="4">Média de exatas</th>
+            <th scope="rowgroup" colspan="4" id="media1">Média de exatas</th>
             <td>0.0</td>
         </tr>
         <tr>
@@ -87,7 +94,7 @@
             <td>0.0</td>
         </tr>
         <tr class="c1">
-            <th colspan="4">Média de humanas</th>
+            <th colspan="4" id="media2">Média de humanas</th>
             <td>0.0</td>
         </tr>
         </tbody>
