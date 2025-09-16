@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form autocomplete="off" action="cadastro.java">
+    <form autocomplete="off" action="cadastro.php" method="POST">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="name" id="inome">
         </p>
@@ -20,6 +20,18 @@
             <input type="text" name="Sobrenome" id="isobrenome">
         </p>
         <p> <input type="submit" value="Enviar"></p>
+    </form>
+
+    <h1>Meu segundo fomulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><label for="iusuario">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="20" size="20" placeholder="Nome ou e-mail do usuário" autocomplete="username">
+        </p>
+        <p><label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="8" autocomplete="current-password">
+        </p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+
     </form>
 </body>
 </html>
