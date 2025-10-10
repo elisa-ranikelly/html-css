@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        div.container{
+            background-color: bisque;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+        }
+
+        div.conteudo{
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            flex: auto;
+        }
+        /*utilizando a propriedade de order nos itens
+        .conteudo#i1{
+            order: 0;
+        }
+
+        .conteudo#i2{
+            order: -2;
+        }
+
+        .conteudo#i3{
+            order: 4;
+        }
+
+        .conteudo#i4{
+            order: 8;
+        }
+
+        .conteudo#i5{
+            order: 5;
+        }*/
+
+        .conteudo#i1{
+            align-self: auto;
+        }
+
+        .conteudo#i2{
+           align-self: flex-end;
+        }
+
+        .conteudo#i3{
+            align-self: center;
+        }
+
+        .conteudo#i4{
+            align-self: flex-start;
+        }
+
+        .conteudo#i5{
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com Flex-box</h1>
+    <div class="container">
+        <div class="conteudo" id="i1">A</div>
+        <div class="conteudo" id="i2">B</div>
+        <div class="conteudo" id="i3">C</div>
+        <div class="conteudo" id="i4">D</div>
+        <div class="conteudo" id="i5">E</div>
+    </div>
+</body>
+</html>
