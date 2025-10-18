@@ -15,21 +15,28 @@
             background-color: aqua;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 150px;
+        }
+
+        #a{
+            flex: 1 0 200px
+        }
+
+        #b{
+            flex: 0 0 200px
+        }
+
+        #c{
+            flex: 1 0 200px
         }
     </style>
 </head>
 <body>
     <h1>Primeiros passos com Flex-box</h1>
     <div class="container">
-        <div class="conteudo">A</div>
-        <div class="conteudo">Conteúdo grande</div>
-        <div class="conteudo">C</div>
-        <div class="conteudo">Conteúdo bem maior</div>
-        <div class="conteudo">E</div>
-        <div class="conteudo">F</div>
-        <div class="conteudo">Conteúdo extremamente grande</div>
-        <div class="conteudo">H</div>
+        <div class="conteudo" id="a">A</div>
+        <div class="conteudo" id="b">B</div>
+        <div class="conteudo" id="c">C</div>
+        
     </div>
 </body>
 </html>
