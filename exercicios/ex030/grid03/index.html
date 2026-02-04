@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout na prática</title>
+    <title>Grid Layout na prática 2</title>
     <style>
         .container{
             border: 3px solid black;
-            height: 300px;
             display: grid;
-            grid-template-columns: auto auto auto auto;
-            grid-template-rows: auto auto auto auto;
+            
+            grid-template-rows: 50px 50px 50px;
+            grid-template-columns: 1fr 2fr 1fr;
             gap: 20px;
+
+            /*cada item:*/
+            place-items: normal normal;
+
+            /*todos os itens:*/
+            place-content: normal normal;
+
+            /*linha nova automática:*/
+            grid-auto-rows: 50px;
+            
             
         }
         .item{
@@ -30,6 +40,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
